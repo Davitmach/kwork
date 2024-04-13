@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+
+}
+
+body {
+    overflow-y: hidden;
+
+    @media (min-width:1px) and (max-width:1024px) {
+        overflow-y: auto;
+    }
+}
+
+/// Главный контейнер
+/// 
+.Main_container {
+
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 100%), url(./assets/background/b1e423c724aed50792b9d16fa8f1f137.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-width:1px) and (max-width:1024px) {
+        flex-direction: column;
+        height: auto;
+    }
+
+    /// Меню 
+    .Left_menu_bar {
+        width: auto;
+        height: 100%;
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+        flex-direction: column;
+        border-right: 1px solid #ffffff;
+        padding: 1rem;
+
+        @media (min-width:1px) and (max-width:1024px) {
+            border: none;
+        }
+
+        .Menu_box {
+            width: auto;
+            height: auto;
+            transform: translateY(-400px);
+
+            @media (min-width:1px) and (max-width:1024px) {
+                transform: translateY(0);
+            }
+
+            ul {
+                width: auto;
+                height: auto;
+                display: flex;
+                align-items: start;
+                justify-content: center;
+                flex-direction: column;
+                list-style: none;
+                gap: 20px;
+
+                @media (min-width:1px) and (max-width:1024px) {
+                    align-items: center;
+                }
+
+                &>li:first-child>a {
+                    color: #E81010;
+
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        height: 0.1rem;
+                        background-color: #E81010;
+                        width: 100%;
+                        bottom: -5px;
+                        left: 0;
+                        transition: .4s;
+                    }
+                }
+
+                li {
+                    width: auto;
+                    height: auto;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    a {
+                        font-size: 1.5rem;
+                        text-decoration: none;
+                        color: #ffffff;
+                        position: relative;
+                        transition: .4s;
+
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            height: 0.1rem;
+                            background-color: #E81010;
+                            width: 0;
+                            bottom: -5px;
+                            left: 0;
+                            transition: .4s;
+                        }
+
+                        &:hover {
+                            color: #E81010;
+                        }
+
+                        &:hover::before {
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // Основная часть
+
+    .Page_container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        flex-direction: column;
+
+        @media (min-width:1px) and (max-width:1024px) {
+            padding: 40px;
+        }
+
+        .Request_call {
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            background: transparent;
+            padding: 4rem;
+
+            @media (min-width:1px) and (max-width:1024px) {
+                justify-content: center;
+            }
+
+            button {
+                width: 13rem;
+                height: 3.5rem;
+                border: none;
+                border-radius: 5px;
+                background: transparent;
+                cursor: pointer;
+                border: 1px solid #ffffff;
+                color: #ffffff;
+                font-size: 1.2rem;
+                transition: .4s;
+                font-weight: 500;
+
+                &:hover {
+                    background-color: #ffffff;
+                    color: #000000;
+                }
+            }
+        }
+
+        .Info_box {
+            width: auto;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 4rem;
+            padding: 0 4rem;
+
+            @media (min-width:320px) and (max-width:1024px) {
+                width: 100%;
+            }
+
+            .Title_box {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                p {
+
+                    font-weight: 500;
+                    font-size: 3rem;
+                    color: #ffffff;
+                    text-align: center;
+
+                    @media (min-width:1px) and (max-width:1024px) {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+
+            .Description_box {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-end;
+
+                p {
+                    width: 27rem;
+                    font-size: 1rem;
+                    color: #ffffff;
+                    text-align: left;
+
+                    @media (min-width:1px) and (max-width:1024px) {
+                        width: 100%;
+                        text-align: center;
+                    }
+                }
+            }
+
+            .Button_box {
+                button {
+                    width: 13rem;
+                    height: 3.5rem;
+                    border: none;
+                    border-radius: 5px;
+                    background: transparent;
+                    cursor: pointer;
+                    border: 1px solid #ffffff;
+                    color: #ffffff;
+                    font-size: 1.2rem;
+                    transition: .4s;
+                    font-weight: 500;
+
+                    &:hover {
+                        background-color: #ffffff;
+                        color: #000000;
+                    }
+                }
+            }
+        }
+
+        .About_company_box {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+gap: 20px;
+            @media (min-width:px) and (max-width:1024px) {
+                gap: 30px;
+            }
+
+            .About_box {
+                transition: .4s;
+            }
+
+            &>.About_box:hover {
+                background-color: #003A8A;
+            }
+
+            .About_box {
+                width: 40vh;
+                height: 14rem;
+                background: transparent;
+                border: 1px solid #ffffff;
+                padding: 2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-wrap: wrap;
+                gap: 2rem;
+
+                @media (min-width:1px) and (max-width:1024px) {
+                    width: 100%;
+
+                }
+
+                h1 {
+                    color: #ffffff;
+                }
+
+                p {
+                    color: #ffffff;
+                    font-size: 1.4rem;
+
+                    @media (min-width:320px) and (max-width:1024px) {
+                        text-align: center;
+                        font-size: 1.3rem;
+                    }
+
+                }
+            }
+        }
+    }
+
+    // Правая часть
+
+    .Right_bar {
+        width: 20%;
+        height: 100%;
+        padding: 2rem 3rem;
+        display: flex;
+        justify-content: flex-start;
+        border-left: 1px solid #ffffff;
+
+        @media (min-width:1px) and (max-width:1024px) {
+            display: none;
+        }
+
+        .Menu_btn {
+            width: 50px;
+            height: 1rem;
+            border-top: 1px solid #ffffff;
+            border-bottom: 1px solid #ffffff;
+            cursor: pointer;
+        }
+    }
+}

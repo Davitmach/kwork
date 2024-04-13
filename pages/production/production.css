@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+body {
+  overflow: hidden;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  body {
+    overflow: auto;
+  }
+}
+
+.Main_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  .Main_container {
+    flex-direction: column;
+    height: auto;
+  }
+}
+.Main_container .Left_menu_bar {
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+  border-right: 1px solid rgba(51, 51, 51, 0.5);
+  padding: 1rem;
+  gap: 30px;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  .Main_container .Left_menu_bar {
+    border: none;
+    height: auto;
+  }
+}
+.Main_container .Left_menu_bar .Menu_box {
+  width: auto;
+  height: auto;
+  transform: translateY(-400px);
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  .Main_container .Left_menu_bar .Menu_box {
+    transform: translateY(0);
+  }
+}
+.Main_container .Left_menu_bar .Menu_box ul {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  list-style: none;
+  gap: 20px;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  .Main_container .Left_menu_bar .Menu_box ul {
+    align-items: center;
+  }
+}
+.Main_container .Left_menu_bar .Menu_box ul > li:nth-child(3) > a {
+  color: #E81010;
+}
+.Main_container .Left_menu_bar .Menu_box ul > li:nth-child(3) > a::before {
+  content: "";
+  position: absolute;
+  height: 0.1rem;
+  background-color: #E81010;
+  width: 100%;
+  bottom: -5px;
+  left: 0;
+  transition: 0.4s;
+}
+.Main_container .Left_menu_bar .Menu_box ul li {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Main_container .Left_menu_bar .Menu_box ul li a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+  position: relative;
+  transition: 0.4s;
+}
+.Main_container .Left_menu_bar .Menu_box ul li a::before {
+  content: "";
+  position: absolute;
+  height: 0.1rem;
+  background-color: #E81010;
+  width: 0;
+  bottom: -5px;
+  left: 0;
+  transition: 0.4s;
+}
+.Main_container .Left_menu_bar .Menu_box ul li a:hover {
+  color: #E81010;
+}
+.Main_container .Left_menu_bar .Menu_box ul li a:hover::before {
+  width: 100%;
+}
+.Main_container .Page_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.Main_container .Page_container .Images_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.Main_container .Page_container .Images_container > div {
+  width: 50%;
+  height: 50vh;
+  border: 1px solid rgba(51, 51, 51, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+  padding: 100px 0;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  .Main_container .Page_container .Images_container > div {
+    width: 100%;
+  }
+}
+.Main_container .Page_container .Images_container > div:hover .Info_box {
+  transform: translateY(0);
+}
+.Main_container .Page_container .Images_container > div:hover .Button_box {
+  opacity: 1;
+  visibility: visible;
+}
+.Main_container .Page_container .Images_container > div:hover .Img_box {
+  opacity: 1;
+  z-index: 1;
+}
+.Main_container .Page_container .Images_container > div:hover .Info_box h1 {
+  color: white;
+}
+.Main_container .Page_container .Images_container > div:hover p {
+  color: white;
+}
+.Main_container .Page_container .Images_container > div .Info_box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 50px;
+  transform: translateY(50px);
+  transition: 0.4s;
+  z-index: 2;
+}
+.Main_container .Page_container .Images_container > div .Button_box {
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s;
+  z-index: 22;
+}
+.Main_container .Page_container .Images_container > div .Button_box button {
+  width: 13rem;
+  height: 3.5rem;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+  cursor: pointer !important;
+  border: 1px solid rgb(255, 255, 255);
+  color: #ffffff;
+  font-size: 1.2rem;
+  transition: 0.4s;
+  font-weight: 500;
+  z-index: 3;
+}
+.Main_container .Page_container .Images_container > div .Button_box button:hover {
+  background-color: white;
+  color: rgba(51, 51, 51, 0.822);
+}
+.Main_container .Page_container .Images_container > div h1 {
+  font-size: 3rem;
+  color: rgb(232, 16, 16);
+  position: relative;
+  transition: 0.4s;
+}
+.Main_container .Page_container .Images_container > div h1::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 270px;
+  left: -50%;
+  transform: translateX(-25%);
+  bottom: -20px;
+  background-color: rgb(51, 51, 51);
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  .Main_container .Page_container .Images_container > div h1::before {
+    transform: translateX(-15%);
+    width: 150px;
+  }
+}
+.Main_container .Page_container .Images_container > div p {
+  font-size: 1.7rem;
+  text-align: center;
+  color: black;
+  transition: 0.4s;
+}
+.Main_container .Page_container .Images_container > div .Img_box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0;
+  transition: 0.4s;
+}
+.Main_container .Page_container .Images_container > div .Img_box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.Main_container .Right_bar {
+  width: 20%;
+  height: 100%;
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: flex-start;
+  border-left: 1px solid rgba(51, 51, 51, 0.5);
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  .Main_container .Right_bar {
+    display: none;
+  }
+}
+.Main_container .Right_bar .Menu_btn {
+  width: 50px;
+  height: 1rem;
+  border-top: 1px solid rgba(51, 51, 51, 0.5);
+  border-bottom: 1px solid rgba(51, 51, 51, 0.5);
+  cursor: pointer;
+}/*# sourceMappingURL=production.css.map */

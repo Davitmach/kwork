@@ -1,0 +1,383 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+
+body {
+  overflow: hidden;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  body {
+    overflow: auto;
+  }
+}
+
+.Main_container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 100%), url(../../assets/background/b20cf0ecdbd9026e5fd6b2d0585897a7.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  .Main_container {
+    flex-direction: column;
+    height: auto;
+  }
+}
+.Main_container .Left_menu_bar {
+  width: auto;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  flex-direction: column;
+  border-right: 1px solid #ffffff;
+  padding: 1rem;
+  gap: 30px;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  .Main_container .Left_menu_bar {
+    border: none;
+    height: auto;
+  }
+}
+.Main_container .Left_menu_bar .Menu_box {
+  width: auto;
+  height: auto;
+  transform: translateY(-400px);
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  .Main_container .Left_menu_bar .Menu_box {
+    transform: translateY(0);
+  }
+}
+.Main_container .Left_menu_bar .Menu_box ul {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: start;
+  justify-content: center;
+  flex-direction: column;
+  list-style: none;
+  gap: 20px;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  .Main_container .Left_menu_bar .Menu_box ul {
+    align-items: center;
+  }
+}
+.Main_container .Left_menu_bar .Menu_box ul > li:nth-child(4) > a {
+  color: #E81010;
+}
+.Main_container .Left_menu_bar .Menu_box ul > li:nth-child(4) > a::before {
+  content: "";
+  position: absolute;
+  height: 0.1rem;
+  background-color: #E81010;
+  width: 100%;
+  bottom: -5px;
+  left: 0;
+  transition: 0.4s;
+}
+.Main_container .Left_menu_bar .Menu_box ul li {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Main_container .Left_menu_bar .Menu_box ul li a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #ffffff;
+  position: relative;
+  transition: 0.4s;
+}
+.Main_container .Left_menu_bar .Menu_box ul li a::before {
+  content: "";
+  position: absolute;
+  height: 0.1rem;
+  background-color: #E81010;
+  width: 0;
+  bottom: -5px;
+  left: 0;
+  transition: 0.4s;
+}
+.Main_container .Left_menu_bar .Menu_box ul li a:hover {
+  color: #E81010;
+}
+.Main_container .Left_menu_bar .Menu_box ul li a:hover::before {
+  width: 100%;
+}
+.Main_container .Page_container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.Main_container .Page_container .Request_call {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  background: transparent;
+  padding: 4rem;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  .Main_container .Page_container .Request_call {
+    justify-content: center;
+  }
+}
+.Main_container .Page_container .Request_call button {
+  width: 13rem;
+  height: 3.5rem;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+  cursor: pointer;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 1.2rem;
+  transition: 0.4s;
+  font-weight: 500;
+}
+.Main_container .Page_container .Request_call button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+.Main_container .Page_container .Info_box {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 0 4rem;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  .Main_container .Page_container .Info_box {
+    width: 100%;
+  }
+}
+.Main_container .Page_container .Info_box .Title_box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Main_container .Page_container .Info_box .Title_box h1 {
+  width: 100%;
+  font-weight: 500;
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: center;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  .Main_container .Page_container .Info_box .Title_box h1 {
+    font-size: 1.8rem;
+  }
+}
+.Main_container .Page_container .Info_box .About_box {
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 4rem;
+  padding: 40px 0;
+}
+.Main_container .Page_container .Info_box .About_box > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  .Main_container .Page_container .Info_box .About_box > div {
+    flex-direction: column;
+  }
+}
+.Main_container .Page_container .Info_box .About_box .Circle_box:nth-child(2) {
+  transform: translateX(10rem);
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  .Main_container .Page_container .Info_box .About_box .Circle_box:nth-child(2) {
+    transform: translateX(0);
+  }
+}
+.Main_container .Page_container .Info_box .About_box .Circle_box {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: block;
+  border: 2px solid rgba(255, 255, 255, 0.2784313725);
+  background-color: rgba(255, 255, 255, 0.1607843137);
+  position: relative;
+  filter: blur(1px);
+}
+.Main_container .Page_container .Info_box .About_box .Circle_box .Inner_circle {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  top: 50%;
+  left: 50%;
+  border: 2px solid #FFFFFF;
+  filter: blur(0);
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+.Main_container .Page_container .Info_box .About_box > div:first-child {
+  display: flex;
+  transform: translateX(-11rem);
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  .Main_container .Page_container .Info_box .About_box > div:first-child {
+    transform: translateX(0);
+    gap: 80px;
+  }
+}
+.Main_container .Page_container .Info_box .About_box > div:first-child .Border {
+  height: 1px;
+  background-color: #ffffff;
+  width: 7rem;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  .Main_container .Page_container .Info_box .About_box > div:first-child .Border {
+    transform: rotate(90deg);
+  }
+}
+.Main_container .Page_container .Info_box .About_box > div:first-child .Circle_box {
+  border-radius: 50%;
+  width: 120px;
+  height: 80px;
+  display: block;
+  border: 2px solid rgba(255, 255, 255, 0.2784313725);
+  background-color: rgba(255, 255, 255, 0.1607843137);
+  position: relative;
+  filter: blur(1px);
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  .Main_container .Page_container .Info_box .About_box > div:first-child .Circle_box {
+    width: 89px;
+  }
+}
+.Main_container .Page_container .Info_box .About_box > div:first-child .Circle_box .Red_circle {
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  left: 50%;
+  border: 2px solid #E81010;
+  filter: blur(0);
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+.Main_container .Page_container .Info_box .About_box > :last-child {
+  transform: translateX(2rem);
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  .Main_container .Page_container .Info_box .About_box > :last-child {
+    transform: translateX(0);
+  }
+}
+.Main_container .Page_container .Description_box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.Main_container .Page_container .Description_box p {
+  width: 13rem;
+  font-size: 1.3rem;
+  color: #ffffff;
+  text-align: left;
+}
+.Main_container .Page_container .Button_box button {
+  width: 13rem;
+  height: 3.5rem;
+  border: none;
+  border-radius: 5px;
+  background: transparent;
+  cursor: pointer;
+  border: 1px solid #ffffff;
+  color: #ffffff;
+  font-size: 1.2rem;
+  transition: 0.4s;
+  font-weight: 500;
+}
+.Main_container .Page_container .Button_box button:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+.Main_container .Page_container .Partners_box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-top: 1px solid white;
+  padding: 50px 30px;
+}
+.Main_container .Page_container .Partners_box .Title_box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.Main_container .Page_container .Partners_box .Title_box h1 {
+  font-weight: 500;
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+}
+.Main_container .Page_container .Partners_box .Company_box {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  .Main_container .Page_container .Partners_box .Company_box {
+    justify-content: center;
+  }
+}
+.Main_container .Page_container .Partners_box .Company_box img {
+  filter: grayscale(1);
+  width: 250px;
+  height: 125px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.Main_container .Right_bar {
+  width: 20%;
+  height: 100%;
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: flex-start;
+  border-left: 1px solid #ffffff;
+}
+@media (min-width: 320px) and (max-width: 1024px) {
+  .Main_container .Right_bar {
+    display: none;
+  }
+}
+.Main_container .Right_bar .Menu_btn {
+  width: 50px;
+  height: 1rem;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+  cursor: pointer;
+}/*# sourceMappingURL=logistika.css.map */
