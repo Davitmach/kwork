@@ -26,12 +26,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media (min-width: 320px) and (max-width: 1024px) {
-  .Main_container {
-    flex-direction: column;
-    height: auto;
-  }
-}
 .Main_container .Left_menu_bar {
   width: auto;
   height: 100%;
@@ -43,21 +37,10 @@ body {
   padding: 1rem;
   gap: 30px;
 }
-@media (min-width: 320px) and (max-width: 1024px) {
-  .Main_container .Left_menu_bar {
-    border: none;
-    height: auto;
-  }
-}
 .Main_container .Left_menu_bar .Menu_box {
   width: auto;
   height: auto;
   transform: translateY(-400px);
-}
-@media (min-width: 320px) and (max-width: 1024px) {
-  .Main_container .Left_menu_bar .Menu_box {
-    transform: translateY(0);
-  }
 }
 .Main_container .Left_menu_bar .Menu_box ul {
   width: auto;
@@ -144,11 +127,6 @@ body {
   position: relative;
   padding: 100px 0;
 }
-@media (min-width: 320px) and (max-width: 1024px) {
-  .Main_container .Page_container .Images_container > div {
-    width: 100%;
-  }
-}
 .Main_container .Page_container .Images_container > div:hover .Info_box {
   transform: translateY(0);
 }
@@ -230,6 +208,12 @@ body {
   color: black;
   transition: 0.4s;
 }
+@media (min-width: 320px) and (max-width: 1024px) {
+  .Main_container .Page_container .Images_container > div p {
+    font-size: 0.9rem;
+    width: 150px;
+  }
+}
 .Main_container .Page_container .Images_container > div .Img_box {
   position: absolute;
   top: 0;
@@ -253,11 +237,6 @@ body {
   display: flex;
   justify-content: flex-start;
   border-left: 1px solid rgba(51, 51, 51, 0.5);
-}
-@media (min-width: 320px) and (max-width: 1024px) {
-  .Main_container .Right_bar {
-    display: none;
-  }
 }
 .Main_container .Right_bar .Menu_btn {
   width: 50px;

@@ -10,8 +10,9 @@
 
 body {
     overflow: hidden;
+
     @media (min-width:320px) and (max-width:1024px) {
-       overflow: auto;
+        overflow: auto;
     }
 }
 
@@ -29,11 +30,11 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 
-    @media (min-width:320px) and (max-width:1024px) {
-        flex-direction: column;
-        height: auto;
+    // @media (min-width:320px) and (max-width:1024px) {
+    //     flex-direction: column;
+    //     height: auto;
 
-    }
+    // }
 
     /// Меню 
     .Left_menu_bar {
@@ -47,19 +48,23 @@ body {
         padding: 1rem;
         gap: 30px;
 
-        @media (min-width:320px) and (max-width:1024px) {
-            border: none;
-            height: auto;
-        }
-
+        // @media (min-width:320px) and (max-width:1024px) {
+        //     border: none;
+        //     height: auto;
+        // }
+img {
+    @media (min-width:320px) and (max-width:1024px) {
+        width: 115px;
+    }
+}
         .Menu_box {
             width: auto;
             height: auto;
             transform: translateY(-400px);
 
-            @media (min-width:320px) and (max-width:1024px) {
-                transform: translateY(0);
-            }
+            // @media (min-width:320px) and (max-width:1024px) {
+            //     transform: translateY(0);
+            // }
 
             ul {
                 width: auto;
@@ -71,9 +76,9 @@ body {
                 list-style: none;
                 gap: 20px;
 
-                @media (min-width:320px) and (max-width:1024px) {
-                    align-items: center;
-                }
+                // @media (min-width:320px) and (max-width:1024px) {
+                //     align-items: center;
+                // }
 
                 &>li:nth-child(4)>a {
                     color: #E81010;
@@ -139,6 +144,9 @@ body {
 
         flex-direction: column;
 
+        @media (min-width:320px) and (max-width:1024px) {
+            width: 54%;
+        }
 
         .Request_call {
             width: 100%;
@@ -181,9 +189,9 @@ body {
             gap: 4rem;
             padding: 0 4rem;
 
-            @media (min-width:320px) and (max-width:1024px) {
-                width: 100%;
-            }
+            // @media (min-width:320px) and (max-width:1024px) {
+            //     width: 100%;
+            // }
 
             .Title_box {
                 width: 100%;
@@ -197,8 +205,9 @@ body {
                     font-size: 3rem;
                     color: #ffffff;
                     text-align: center;
+
                     @media (min-width:320px) and (max-width:1024px) {
-                       font-size: 1.8rem;
+                        font-size: 1.8rem;
                     }
                 }
             }
@@ -211,22 +220,24 @@ body {
                 justify-content: center;
                 flex-direction: column;
                 gap: 4rem;
-padding: 40px 0;
+                padding: 40px 0;
+
                 &>div {
                     display: flex;
                     align-items: center;
                     justify-content: center;
                     gap: 20px;
-                    @media (min-width:320px) and (max-width:1024px) {
-                        flex-direction: column;
-                    }
+                    // @media (min-width:320px) and (max-width:1024px) {
+                    //     flex-direction: column;
+                    // }
                 }
 
                 .Circle_box:nth-child(2) {
-                    transform: translateX(10rem);
+                    transform:translateX(100px);
                     @media (min-width:320px) and (max-width:1024px) {
                         transform: translateX(0);
                     }
+
                 }
 
                 .Circle_box {
@@ -257,18 +268,19 @@ padding: 40px 0;
 
                 &>div:first-child {
                     display: flex;
-                    transform: translateX(-11rem);
+                    transform: translateX(-37%);
+
                     @media (min-width:320px) and (max-width:1024px) {
-                        transform: translateX(0);
-                        gap: 80px;
+                        transform: translateX(-14%);
+                     
                     }
                     .Border {
                         height: 1px;
                         background-color: #ffffff;
                         width: 7rem;
-                        @media (min-width:320px) and (max-width:1024px) {
-                            transform:rotate(90deg)
-                        }
+                        // @media (min-width:320px) and (max-width:1024px) {
+                        //     transform:rotate(90deg)
+                        // }
                     }
 
                     .Circle_box {
@@ -280,9 +292,10 @@ padding: 40px 0;
                         background-color: #ffffff29;
                         position: relative;
                         filter: blur(1px);
-@media (min-width:320px) and (max-width:1024px) {
-    width: 89px;
-}
+
+                        // @media (min-width:320px) and (max-width:1024px) {
+                        //     width: 89px;
+                        // }
                         .Red_circle {
                             border-radius: 50%;
                             width: 30px;
@@ -302,6 +315,7 @@ padding: 40px 0;
 
                 &>:last-child {
                     transform: translateX(2rem);
+
                     @media (min-width:320px) and (max-width:1024px) {
                         transform: translateX(0);
                     }
@@ -316,10 +330,14 @@ padding: 40px 0;
             justify-content: flex-end;
 
             p {
-                width: 13rem;
+                width: 50%;
                 font-size: 1.3rem;
                 color: #ffffff;
                 text-align: left;
+
+                @media (min-width:320px) and (max-width:1200px) {
+                    font-size: 1rem;
+                }
 
             }
         }
@@ -359,6 +377,7 @@ padding: 40px 0;
                 width: 100%;
                 display: flex;
                 justify-content: center;
+
                 h1 {
                     font-weight: 500;
                     font-size: 2rem;
@@ -374,14 +393,25 @@ padding: 40px 0;
                 align-items: center;
                 justify-content: space-between;
                 flex-wrap: wrap;
+
                 @media (min-width:320px) and (max-width:1024px) {
-                   justify-content: center;
+                    justify-content: center;
                 }
+
                 img {
                     filter: grayscale(1);
                     width: 250px;
                     height: 125px;
                     object-fit: contain;
+
+                    @media (min-width:552px) and (max-width:1200px) {
+                        width: 150px;
+                        height: 100px;
+                    }
+                    @media (min-width:320px) and (max-width:552px) {
+                        width: 100px;
+                        height: 50px; 
+                    }
                 }
             }
         }
@@ -398,7 +428,7 @@ padding: 40px 0;
         border-left: 1px solid #ffffff;
 
         @media (min-width:320px) and (max-width:1024px) {
-            display: none;
+            padding: 2rem 0.9rem;
         }
 
         .Menu_btn {

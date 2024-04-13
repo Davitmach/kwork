@@ -9,11 +9,6 @@
 body {
   overflow-y: hidden;
 }
-@media (min-width: 1px) and (max-width: 1024px) {
-  body {
-    overflow-y: auto;
-  }
-}
 
 .Main_container {
   width: 100%;
@@ -26,12 +21,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media (min-width: 1px) and (max-width: 1024px) {
-  .Main_container {
-    flex-direction: column;
-    height: auto;
-  }
-}
 .Main_container .Left_menu_bar {
   width: auto;
   height: 100%;
@@ -42,20 +31,10 @@ body {
   border-right: 1px solid #ffffff;
   padding: 1rem;
 }
-@media (min-width: 1px) and (max-width: 1024px) {
-  .Main_container .Left_menu_bar {
-    border: none;
-  }
-}
 .Main_container .Left_menu_bar .Menu_box {
   width: auto;
   height: auto;
   transform: translateY(-400px);
-}
-@media (min-width: 1px) and (max-width: 1024px) {
-  .Main_container .Left_menu_bar .Menu_box {
-    transform: translateY(0);
-  }
 }
 .Main_container .Left_menu_bar .Menu_box ul {
   width: auto;
@@ -66,11 +45,6 @@ body {
   flex-direction: column;
   list-style: none;
   gap: 20px;
-}
-@media (min-width: 1px) and (max-width: 1024px) {
-  .Main_container .Left_menu_bar .Menu_box ul {
-    align-items: center;
-  }
 }
 .Main_container .Left_menu_bar .Menu_box ul > li:first-child > a {
   color: #E81010;
@@ -124,11 +98,6 @@ body {
   gap: 30px;
   flex-direction: column;
 }
-@media (min-width: 1px) and (max-width: 1024px) {
-  .Main_container .Page_container {
-    padding: 40px;
-  }
-}
 .Main_container .Page_container .Request_call {
   width: 100%;
   display: flex;
@@ -167,11 +136,6 @@ body {
   flex-direction: column;
   gap: 4rem;
   padding: 0 4rem;
-}
-@media (min-width: 320px) and (max-width: 1024px) {
-  .Main_container .Page_container .Info_box {
-    width: 100%;
-  }
 }
 .Main_container .Page_container .Info_box .Title_box {
   width: 100%;
@@ -232,12 +196,6 @@ body {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 20px;
-}
-@media (min-width: px) and (max-width: 1024px) {
-  .Main_container .Page_container .About_company_box {
-    gap: 30px;
-  }
 }
 .Main_container .Page_container .About_company_box .About_box {
   transition: 0.4s;
@@ -246,7 +204,7 @@ body {
   background-color: #003A8A;
 }
 .Main_container .Page_container .About_company_box .About_box {
-  width: 40vh;
+  width: 33%;
   height: 14rem;
   background: transparent;
   border: 1px solid #ffffff;
@@ -257,11 +215,6 @@ body {
   flex-wrap: wrap;
   gap: 2rem;
 }
-@media (min-width: 1px) and (max-width: 1024px) {
-  .Main_container .Page_container .About_company_box .About_box {
-    width: 100%;
-  }
-}
 .Main_container .Page_container .About_company_box .About_box h1 {
   color: #ffffff;
 }
@@ -269,10 +222,16 @@ body {
   color: #ffffff;
   font-size: 1.4rem;
 }
-@media (min-width: 320px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .Main_container .Page_container .About_company_box .About_box p {
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .Main_container .Page_container .About_company_box .About_box p {
+    text-align: center;
+    font-size: 0.8rem;
   }
 }
 .Main_container .Right_bar {
@@ -282,11 +241,6 @@ body {
   display: flex;
   justify-content: flex-start;
   border-left: 1px solid #ffffff;
-}
-@media (min-width: 1px) and (max-width: 1024px) {
-  .Main_container .Right_bar {
-    display: none;
-  }
 }
 .Main_container .Right_bar .Menu_btn {
   width: 50px;

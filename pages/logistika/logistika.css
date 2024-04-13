@@ -26,12 +26,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
 }
-@media (min-width: 320px) and (max-width: 1024px) {
-  .Main_container {
-    flex-direction: column;
-    height: auto;
-  }
-}
 .Main_container .Left_menu_bar {
   width: auto;
   height: 100%;
@@ -44,20 +38,14 @@ body {
   gap: 30px;
 }
 @media (min-width: 320px) and (max-width: 1024px) {
-  .Main_container .Left_menu_bar {
-    border: none;
-    height: auto;
+  .Main_container .Left_menu_bar img {
+    width: 115px;
   }
 }
 .Main_container .Left_menu_bar .Menu_box {
   width: auto;
   height: auto;
   transform: translateY(-400px);
-}
-@media (min-width: 320px) and (max-width: 1024px) {
-  .Main_container .Left_menu_bar .Menu_box {
-    transform: translateY(0);
-  }
 }
 .Main_container .Left_menu_bar .Menu_box ul {
   width: auto;
@@ -68,11 +56,6 @@ body {
   flex-direction: column;
   list-style: none;
   gap: 20px;
-}
-@media (min-width: 320px) and (max-width: 1024px) {
-  .Main_container .Left_menu_bar .Menu_box ul {
-    align-items: center;
-  }
 }
 .Main_container .Left_menu_bar .Menu_box ul > li:nth-child(4) > a {
   color: #E81010;
@@ -125,6 +108,11 @@ body {
   justify-content: space-between;
   flex-direction: column;
 }
+@media (min-width: 320px) and (max-width: 1024px) {
+  .Main_container .Page_container {
+    width: 54%;
+  }
+}
 .Main_container .Page_container .Request_call {
   width: 100%;
   display: flex;
@@ -164,11 +152,6 @@ body {
   gap: 4rem;
   padding: 0 4rem;
 }
-@media (min-width: 320px) and (max-width: 1024px) {
-  .Main_container .Page_container .Info_box {
-    width: 100%;
-  }
-}
 .Main_container .Page_container .Info_box .Title_box {
   width: 100%;
   display: flex;
@@ -203,13 +186,8 @@ body {
   justify-content: center;
   gap: 20px;
 }
-@media (min-width: 320px) and (max-width: 1024px) {
-  .Main_container .Page_container .Info_box .About_box > div {
-    flex-direction: column;
-  }
-}
 .Main_container .Page_container .Info_box .About_box .Circle_box:nth-child(2) {
-  transform: translateX(10rem);
+  transform: translateX(100px);
 }
 @media (min-width: 320px) and (max-width: 1024px) {
   .Main_container .Page_container .Info_box .About_box .Circle_box:nth-child(2) {
@@ -239,23 +217,17 @@ body {
 }
 .Main_container .Page_container .Info_box .About_box > div:first-child {
   display: flex;
-  transform: translateX(-11rem);
+  transform: translateX(-37%);
 }
 @media (min-width: 320px) and (max-width: 1024px) {
   .Main_container .Page_container .Info_box .About_box > div:first-child {
-    transform: translateX(0);
-    gap: 80px;
+    transform: translateX(-14%);
   }
 }
 .Main_container .Page_container .Info_box .About_box > div:first-child .Border {
   height: 1px;
   background-color: #ffffff;
   width: 7rem;
-}
-@media (min-width: 320px) and (max-width: 1024px) {
-  .Main_container .Page_container .Info_box .About_box > div:first-child .Border {
-    transform: rotate(90deg);
-  }
 }
 .Main_container .Page_container .Info_box .About_box > div:first-child .Circle_box {
   border-radius: 50%;
@@ -266,11 +238,6 @@ body {
   background-color: rgba(255, 255, 255, 0.1607843137);
   position: relative;
   filter: blur(1px);
-}
-@media (min-width: 320px) and (max-width: 1024px) {
-  .Main_container .Page_container .Info_box .About_box > div:first-child .Circle_box {
-    width: 89px;
-  }
 }
 .Main_container .Page_container .Info_box .About_box > div:first-child .Circle_box .Red_circle {
   border-radius: 50%;
@@ -298,10 +265,15 @@ body {
   justify-content: flex-end;
 }
 .Main_container .Page_container .Description_box p {
-  width: 13rem;
+  width: 50%;
   font-size: 1.3rem;
   color: #ffffff;
   text-align: left;
+}
+@media (min-width: 320px) and (max-width: 1200px) {
+  .Main_container .Page_container .Description_box p {
+    font-size: 1rem;
+  }
 }
 .Main_container .Page_container .Button_box button {
   width: 13rem;
@@ -361,6 +333,18 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
 }
+@media (min-width: 552px) and (max-width: 1200px) {
+  .Main_container .Page_container .Partners_box .Company_box img {
+    width: 150px;
+    height: 100px;
+  }
+}
+@media (min-width: 320px) and (max-width: 552px) {
+  .Main_container .Page_container .Partners_box .Company_box img {
+    width: 100px;
+    height: 50px;
+  }
+}
 .Main_container .Right_bar {
   width: 20%;
   height: 100%;
@@ -371,7 +355,7 @@ body {
 }
 @media (min-width: 320px) and (max-width: 1024px) {
   .Main_container .Right_bar {
-    display: none;
+    padding: 2rem 0.9rem;
   }
 }
 .Main_container .Right_bar .Menu_btn {
