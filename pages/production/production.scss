@@ -42,7 +42,7 @@ body {
         height: 100%;
         display: flex;
         align-items: start;
-        justify-content: space-between;
+        justify-content: start;
         flex-direction: column;
         border-right: 1px solid rgba(51, 51, 51, 0.5);
         padding: 1rem;
@@ -56,7 +56,7 @@ body {
         .Menu_box {
             width: auto;
             height: auto;
-            transform: translateY(-400px);
+            transform: translateY(100%);
 
             // @media (min-width:320px) and (max-width:1024px) {
             //     transform: translateY(0);
