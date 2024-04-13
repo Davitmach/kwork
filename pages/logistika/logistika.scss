@@ -9,7 +9,7 @@
 }
 
 body {
-    overflow: hidden;
+    
 
     @media (min-width:320px) and (max-width:1024px) {
         overflow: auto;
@@ -35,6 +35,10 @@ body {
     //     height: auto;
 
     // }
+
+    @media (max-height:900px) {
+        height: 120vh;
+    }
 
     /// Меню 
     .Left_menu_bar {

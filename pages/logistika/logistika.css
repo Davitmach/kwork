@@ -6,9 +6,6 @@
   font-family: "Montserrat";
 }
 
-body {
-  overflow: hidden;
-}
 @media (min-width: 320px) and (max-width: 1024px) {
   body {
     overflow: auto;
@@ -25,6 +22,11 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (max-height: 900px) {
+  .Main_container {
+    height: 120vh;
+  }
 }
 .Main_container .Left_menu_bar {
   width: auto;
