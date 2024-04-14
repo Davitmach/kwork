@@ -32,7 +32,7 @@ body {
   padding: 1rem;
   position: relative;
 }
-@media (min-width: 320px) and (max-width: 552px) {
+@media (min-width: 320px) and (max-width: 1024px) {
   .Main_container .Left_menu_bar .Logo_container img {
     width: 100px;
   }
@@ -86,6 +86,11 @@ body {
   position: relative;
   transition: 0.4s;
 }
+@media (min-width: 320px) and (max-width: 1024px) {
+  .Main_container .Left_menu_bar .Menu_box ul li a {
+    font-size: 0.8rem;
+  }
+}
 @media (max-height: 387px) {
   .Main_container .Left_menu_bar .Menu_box ul li a {
     font-size: 1rem;
@@ -138,11 +143,6 @@ body {
     padding: 0.5rem;
   }
 }
-@media (min-width: 1px) and (max-width: 1024px) {
-  .Main_container .Page_container .Request_call {
-    justify-content: center;
-  }
-}
 .Main_container .Page_container .Request_call button {
   width: 13rem;
   height: 3.5rem;
@@ -159,6 +159,7 @@ body {
 @media (min-width: 320px) and (max-height: 768px) {
   .Main_container .Page_container .Request_call button {
     font-size: 0.8rem;
+    width: 8rem;
   }
 }
 @media (max-height: 547px) {
@@ -279,7 +280,7 @@ body {
   background-color: #003A8A;
 }
 .Main_container .Page_container .About_company_box .About_box {
-  width: 33%;
+  width: 33.3%;
   height: 14rem;
   background: transparent;
   border: 1px solid #ffffff;
