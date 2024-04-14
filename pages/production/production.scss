@@ -11,9 +11,7 @@
 body {
     overflow: hidden;
 
-    @media (min-width:320px) and (max-width:1024px) {
-        overflow: auto;
-    }
+ 
 }
 
 /// Главный контейнер
@@ -47,17 +45,28 @@ body {
         border-right: 1px solid rgba(51, 51, 51, 0.5);
         padding: 1rem;
         gap: 30px;
+        position: relative;
 
         // @media (min-width:320px) and (max-width:1024px) {
         //     border: none;
         //     height: auto;
         // }
-
+.Logo_container {
+    img {
+        @media (max-height:328px) {
+            width: 100px;
+        }
+    }
+}
         .Menu_box {
             width: auto;
             height: auto;
-            transform: translateY(100%);
-
+         position: absolute;
+         top:50%;
+         transform: translateY(-50%);
+         @media (max-height:324px) {
+            top:60%;
+        }
             // @media (min-width:320px) and (max-width:1024px) {
             //     transform: translateY(0);
             // }
@@ -104,7 +113,12 @@ body {
                         color: rgba(51, 51, 51, 1);
                         position: relative;
                         transition: .4s;
-
+@media (max-height:422px) {
+    font-size: 1rem;
+}
+@media (max-height:324px) {
+    font-size: 0.7rem;
+}
                         &::before {
                             content: '';
                             position: absolute;
@@ -157,7 +171,9 @@ body {
                 flex-direction: column;
                 position: relative;
                 padding: 100px 0;
-
+@media (max-height:637px) {
+    padding:  0 0;
+}
                 // @media (min-width:320px) and (max-width:1024px) {
                 //     width: 100%;
                 // }
@@ -195,6 +211,9 @@ body {
                     transform: translateY(50px);
                     transition: .4s;
                     z-index: 2;
+                    @media (max-height:300px) {
+                        transform: translateY(20px);
+                    }
                 }
 
                 .Button_box {
@@ -216,7 +235,16 @@ body {
                         transition: .4s;
                         font-weight: 500;
                         z-index: 3;
-
+@media (max-height:550px) {
+    width: 7rem;
+    height: 2rem;
+    font-size: 0.7rem;
+    transform: translateY(-10px);
+}
+@media (max-height:257px) {
+    height: 1rem;
+    width: 5rem;
+}
                         &:hover {
                             background-color: white;
                             color: rgba(51, 51, 51, 0.822);
@@ -230,7 +258,9 @@ body {
                     color: rgba(232, 16, 16, 1);
                     position: relative;
                     transition: .4s;
-
+@media (max-height:410px) {
+    font-size: 1rem;
+}
                     &::before {
                         content: '';
                         position: absolute;
@@ -242,21 +272,26 @@ body {
                         background-color: rgba(51, 51, 51, 1);
 
                         @media (min-width:320px) and (max-width:1024px) {
-                            transform: translateX(-15%);
-                            width: 150px;
+                            transform: translateX(-30%);
+                            width: 100px;
                         }
                     }
                 }
 
                 p {
+                    width: 100%;
                     font-size: 1.7rem;
                     text-align: center;
                     color: black;
                     transition: .4s;
                     @media (min-width:320px) and (max-width:1024px) {
-                        font-size: 0.9rem;
-                        width: 150px;
+                        font-size: 0.6rem;
+                        width: 100%;
                     }
+                    @media (max-height:657px) {
+                        font-size: 0.5rem;
+                    }
+                   
                 }
 
                 .Img_box {
@@ -292,7 +327,9 @@ body {
         display: flex;
         justify-content: flex-start;
         border-left: 1px solid rgba(51, 51, 51, 0.5);
-
+@media (min-width:320px) and (max-width:768px) {
+    padding: 2rem 1rem;
+}
         // @media (min-width:320px) and (max-width:1024px) {
         //     display: none;
         // }
@@ -303,6 +340,9 @@ body {
             border-top: 1px solid rgba(51, 51, 51, 0.5);
             border-bottom: 1px solid rgba(51, 51, 51, 0.5);
             cursor: pointer;
+            @media (min-width:320px) and (max-width:768px) {
+               width: 20px;
+            }
         }
     }
 }

@@ -9,11 +9,6 @@
 body {
   overflow: hidden;
 }
-@media (min-width: 320px) and (max-width: 1024px) {
-  body {
-    overflow: auto;
-  }
-}
 
 .Main_container {
   width: 100%;
@@ -36,11 +31,24 @@ body {
   border-right: 1px solid rgba(51, 51, 51, 0.5);
   padding: 1rem;
   gap: 30px;
+  position: relative;
+}
+@media (max-height: 328px) {
+  .Main_container .Left_menu_bar .Logo_container img {
+    width: 100px;
+  }
 }
 .Main_container .Left_menu_bar .Menu_box {
   width: auto;
   height: auto;
-  transform: translateY(100%);
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+@media (max-height: 324px) {
+  .Main_container .Left_menu_bar .Menu_box {
+    top: 60%;
+  }
 }
 .Main_container .Left_menu_bar .Menu_box ul {
   width: auto;
@@ -83,6 +91,16 @@ body {
   color: rgb(51, 51, 51);
   position: relative;
   transition: 0.4s;
+}
+@media (max-height: 422px) {
+  .Main_container .Left_menu_bar .Menu_box ul li a {
+    font-size: 1rem;
+  }
+}
+@media (max-height: 324px) {
+  .Main_container .Left_menu_bar .Menu_box ul li a {
+    font-size: 0.7rem;
+  }
 }
 .Main_container .Left_menu_bar .Menu_box ul li a::before {
   content: "";
@@ -127,6 +145,11 @@ body {
   position: relative;
   padding: 100px 0;
 }
+@media (max-height: 637px) {
+  .Main_container .Page_container .Images_container > div {
+    padding: 0 0;
+  }
+}
 .Main_container .Page_container .Images_container > div:hover .Info_box {
   transform: translateY(0);
 }
@@ -156,6 +179,11 @@ body {
   transition: 0.4s;
   z-index: 2;
 }
+@media (max-height: 300px) {
+  .Main_container .Page_container .Images_container > div .Info_box {
+    transform: translateY(20px);
+  }
+}
 .Main_container .Page_container .Images_container > div .Button_box {
   opacity: 0;
   visibility: hidden;
@@ -176,6 +204,20 @@ body {
   font-weight: 500;
   z-index: 3;
 }
+@media (max-height: 550px) {
+  .Main_container .Page_container .Images_container > div .Button_box button {
+    width: 7rem;
+    height: 2rem;
+    font-size: 0.7rem;
+    transform: translateY(-10px);
+  }
+}
+@media (max-height: 257px) {
+  .Main_container .Page_container .Images_container > div .Button_box button {
+    height: 1rem;
+    width: 5rem;
+  }
+}
 .Main_container .Page_container .Images_container > div .Button_box button:hover {
   background-color: white;
   color: rgba(51, 51, 51, 0.822);
@@ -185,6 +227,11 @@ body {
   color: rgb(232, 16, 16);
   position: relative;
   transition: 0.4s;
+}
+@media (max-height: 410px) {
+  .Main_container .Page_container .Images_container > div h1 {
+    font-size: 1rem;
+  }
 }
 .Main_container .Page_container .Images_container > div h1::before {
   content: "";
@@ -198,11 +245,12 @@ body {
 }
 @media (min-width: 320px) and (max-width: 1024px) {
   .Main_container .Page_container .Images_container > div h1::before {
-    transform: translateX(-15%);
-    width: 150px;
+    transform: translateX(-30%);
+    width: 100px;
   }
 }
 .Main_container .Page_container .Images_container > div p {
+  width: 100%;
   font-size: 1.7rem;
   text-align: center;
   color: black;
@@ -210,8 +258,13 @@ body {
 }
 @media (min-width: 320px) and (max-width: 1024px) {
   .Main_container .Page_container .Images_container > div p {
-    font-size: 0.9rem;
-    width: 150px;
+    font-size: 0.6rem;
+    width: 100%;
+  }
+}
+@media (max-height: 657px) {
+  .Main_container .Page_container .Images_container > div p {
+    font-size: 0.5rem;
   }
 }
 .Main_container .Page_container .Images_container > div .Img_box {
@@ -238,10 +291,20 @@ body {
   justify-content: flex-start;
   border-left: 1px solid rgba(51, 51, 51, 0.5);
 }
+@media (min-width: 320px) and (max-width: 768px) {
+  .Main_container .Right_bar {
+    padding: 2rem 1rem;
+  }
+}
 .Main_container .Right_bar .Menu_btn {
   width: 50px;
   height: 1rem;
   border-top: 1px solid rgba(51, 51, 51, 0.5);
   border-bottom: 1px solid rgba(51, 51, 51, 0.5);
   cursor: pointer;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .Main_container .Right_bar .Menu_btn {
+    width: 20px;
+  }
 }/*# sourceMappingURL=production.css.map */
