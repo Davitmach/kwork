@@ -56,6 +56,9 @@ body {
         @media (max-height:328px) {
             width: 100px;
         }
+        @media (min-width:320px) and (max-width:1024px) {
+            width: 100px;
+        }
     }
 }
         .Menu_box {

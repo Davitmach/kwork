@@ -38,6 +38,16 @@ body {
     width: 115px;
   }
 }
+@media (max-height: 311px) {
+  .Main_container .Left_menu_bar img {
+    width: 100px;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .Main_container .Left_menu_bar img {
+    width: 80px;
+  }
+}
 .Main_container .Left_menu_bar .Menu_box {
   width: auto;
   height: auto;
@@ -47,7 +57,7 @@ body {
 }
 @media (max-height: 281px) {
   .Main_container .Left_menu_bar .Menu_box {
-    top: 60%;
+    top: 70%;
   }
 }
 .Main_container .Left_menu_bar .Menu_box ul {
@@ -92,6 +102,11 @@ body {
     font-size: 1rem;
   }
 }
+@media (max-height: 465px) {
+  .Main_container .Left_menu_bar .Menu_box ul li a {
+    font-size: 0.8rem;
+  }
+}
 .Main_container .Left_menu_bar .Menu_box ul li a::before {
   content: "";
   position: absolute;
@@ -123,11 +138,6 @@ body {
   background: transparent;
   padding: 4rem;
 }
-@media (min-width: 320px) and (max-width: 1024px) {
-  .Main_container .Page_container .Request_call {
-    justify-content: center;
-  }
-}
 @media (max-height: 900px) {
   .Main_container .Page_container .Request_call {
     padding: 1rem;
@@ -146,6 +156,20 @@ body {
   transition: 0.4s;
   font-weight: 500;
 }
+@media (max-height: 446px) {
+  .Main_container .Page_container .Request_call button {
+    width: 8rem;
+    height: 2rem;
+    font-size: 0.8rem;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .Main_container .Page_container .Request_call button {
+    width: 8rem;
+    height: 2rem;
+    font-size: 0.8rem;
+  }
+}
 .Main_container .Page_container .Request_call button:hover {
   background-color: #ffffff;
   color: #000000;
@@ -157,7 +181,7 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 0 4rem;
+  padding: 0 1rem;
 }
 .Main_container .Page_container .Info_box .Title_box {
   width: 100%;
@@ -171,6 +195,11 @@ body {
   font-size: 3rem;
   color: #ffffff;
   text-align: center;
+}
+@media (max-height: 616px) {
+  .Main_container .Page_container .Info_box .Title_box h1 {
+    font-size: 1rem;
+  }
 }
 @media (min-width: 320px) and (max-width: 1024px) {
   .Main_container .Page_container .Info_box .Title_box h1 {
@@ -187,6 +216,11 @@ body {
   gap: 4rem;
   padding: 40px 0;
 }
+@media (max-height: 800px) {
+  .Main_container .Page_container .Info_box .About_box {
+    gap: 0.6rem;
+  }
+}
 .Main_container .Page_container .Info_box .About_box > div {
   display: flex;
   align-items: center;
@@ -195,11 +229,6 @@ body {
 }
 .Main_container .Page_container .Info_box .About_box .Circle_box:nth-child(2) {
   transform: translateX(100px);
-}
-@media (min-width: 320px) and (max-width: 1024px) {
-  .Main_container .Page_container .Info_box .About_box .Circle_box:nth-child(2) {
-    transform: translateX(0);
-  }
 }
 .Main_container .Page_container .Info_box .About_box .Circle_box {
   border-radius: 50%;
@@ -246,6 +275,12 @@ body {
   position: relative;
   filter: blur(1px);
 }
+@media (max-height: 500px) {
+  .Main_container .Page_container .Info_box .About_box > div:first-child .Circle_box {
+    width: 60px;
+    height: 40px;
+  }
+}
 .Main_container .Page_container .Info_box .About_box > div:first-child .Circle_box .Red_circle {
   border-radius: 50%;
   width: 30px;
@@ -256,6 +291,12 @@ body {
   filter: blur(0);
   position: absolute;
   transform: translate(-50%, -50%);
+}
+@media (max-height: 500px) {
+  .Main_container .Page_container .Info_box .About_box > div:first-child .Circle_box .Red_circle {
+    width: 20px;
+    height: 20px;
+  }
 }
 .Main_container .Page_container .Info_box .About_box > :last-child {
   transform: translateX(2rem);
@@ -279,7 +320,12 @@ body {
 }
 @media (min-width: 320px) and (max-width: 1200px) {
   .Main_container .Page_container .Description_box p {
-    font-size: 1rem;
+    font-size: 0.5rem;
+  }
+}
+@media (max-height: 450px) {
+  .Main_container .Page_container .Description_box p {
+    font-size: 0.6rem;
   }
 }
 .Main_container .Page_container .Button_box button {
@@ -311,12 +357,7 @@ body {
 }
 @media (min-width: 320px) and (max-height: 1300px) {
   .Main_container .Page_container .Partners_box {
-    padding: 50px 10px;
-  }
-}
-@media (max-height: 650px) {
-  .Main_container .Page_container .Partners_box {
-    padding: 10px 30px;
+    padding: 20px 10px;
   }
 }
 .Main_container .Page_container .Partners_box .Title_box {
@@ -330,6 +371,11 @@ body {
   color: white;
   text-align: center;
 }
+@media (max-height: 513px) {
+  .Main_container .Page_container .Partners_box .Title_box h1 {
+    font-size: 0.8rem;
+  }
+}
 .Main_container .Page_container .Partners_box .Company_box {
   width: 100%;
   height: auto;
@@ -337,11 +383,6 @@ body {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-}
-@media (min-width: 320px) and (max-width: 1024px) {
-  .Main_container .Page_container .Partners_box .Company_box {
-    justify-content: center;
-  }
 }
 .Main_container .Page_container .Partners_box .Company_box img {
   filter: grayscale(1);
@@ -352,11 +393,17 @@ body {
 }
 @media (min-width: 552px) and (max-width: 1200px) {
   .Main_container .Page_container .Partners_box .Company_box img {
-    width: 150px;
+    width: 120px;
     height: 100px;
   }
 }
 @media (min-width: 320px) and (max-width: 552px) {
+  .Main_container .Page_container .Partners_box .Company_box img {
+    width: 100px;
+    height: 50px;
+  }
+}
+@media (max-height: 568px) {
   .Main_container .Page_container .Partners_box .Company_box img {
     width: 100px;
     height: 50px;
@@ -386,4 +433,9 @@ body {
   border-top: 1px solid #ffffff;
   border-bottom: 1px solid #ffffff;
   cursor: pointer;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .Main_container .Right_bar .Menu_btn {
+    width: 20px;
+  }
 }/*# sourceMappingURL=logistika.css.map */
