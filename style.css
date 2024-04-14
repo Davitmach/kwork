@@ -32,6 +32,11 @@ body {
   padding: 1rem;
   position: relative;
 }
+@media (min-width: 320px) and (max-width: 552px) {
+  .Main_container .Left_menu_bar .Logo_container img {
+    width: 100px;
+  }
+}
 .Main_container .Left_menu_bar .Menu_box {
   width: auto;
   height: auto;

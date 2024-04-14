@@ -45,7 +45,14 @@ body {
         // @media (min-width:1px) and (max-width:1024px) {
         //     border: none;
         // }
+.Logo_container {
+    img  {
 
+        @media (min-width:320px) and (max-width:552px) {
+            width: 100px;
+        }
+    }
+}
         .Menu_box {
             width: auto;
             height: auto;
